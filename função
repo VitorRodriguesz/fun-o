@@ -12,3 +12,40 @@ def calculadora(valor1, valor2, operacao):
         resultado = "Operação inválida"
     return resultado
 print(calculadora(10, 15, "+"))
+
+--------------------------------------------------------------------
+def desafio(n):
+    # Armazenando a quantidade primos
+    qtdPrimos = 0
+    # for que rodará n vezes
+    for i in range(n):
+        # Solicitando um número ao usuario a cada volta
+        numero = int(input('Digite um número: '))
+        # Variavel que vai armazenar a qtd de divisores
+        # deste número
+        qtdDivisores = 0
+        for j in range(1, numero + 1):
+            # Se o resto da divisão for zero
+            # incrementa-se a qtd de divisores
+            if numero % j == 0:
+                qtdDivisores += 1
+
+            if qtdDivisores > 2:
+                break
+        # Testando se a qtd de divisores é menor que 2
+        if qtdDivisores <= 2:
+            qtdPrimos += 1
+    # Retornando a quantidade de divisores
+    return qtdPrimos
+
+print(desafio(5))
+
+
+
+
+
+
+
+
+
+
