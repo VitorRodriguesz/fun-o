@@ -1,0 +1,14 @@
+
+def calculadora(valor1, valor2, operacao):
+    if operacao == "+":
+        resultado = valor1 + valor2
+    elif operacao == "-":
+        resultado = valor1 - valor2
+    elif operacao == "/":
+        resultado = valor1 / valor2
+    elif operacao == "*":
+        resultado = valor1 * valor2
+    else:
+        resultado = "Operação inválida"
+    return resultado
+print(calculadora(10, 15, "+"))
